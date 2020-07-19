@@ -11,12 +11,13 @@ const generateTarget = () => {
 const compareGuesses = (humanGuess, computerGuess, targetGuess) => {
   const humanDifference = Math.abs(targetGuess - humanGuess);
   const computerDifference = Math.abs(targetGuess - computerGuess);
+  return humanDifference <= computerDifference;
 
-  if (humanDifference <= computerDifference) {
+  /* if (humanDifference <= computerDifference) {
     return true;
   } else {
     return false;
-  }
+  } */
 };
 
 const updateScore = (winner) => {
